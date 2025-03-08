@@ -6,21 +6,31 @@
 
 :root {
 
-  /* Backgrond */
-  --background-default: #F5F4F0;
+ /* Background */
+ --background-color-default: #F5F4F0;
 
-  /* border */
-  --border-primary: #D9D9D9;
+ /* Border */
+ --border-color-primary: #D9D9D9;
 
-  /* Text */
-  --text-primary: #1B1B1B;
-  --text-secondary: #333333;
-  --text-tertiary: #696969;
-  --text-headline: #E1624F;
+ /* Text Color */
+ --text-color-primary: #1B1B1B;
+ --text-color-secondary: #333333;
+ --text-color-tertiary: #696969;
+ --text-color-headline: #E1624F;
 
-  /* Accent */
-  --accent-blue: #0C51A7;
-  --accent-orange: #E95E10;
-  --accent-pink: #E5245E;
-  --accent-purple: #591898;
+ /* Accent */
+ --accent-color-blue: #0C51A7;
+ --accent-color-orange: #E95E10;
+ --accent-color-pink: #E5245E;
+ --accent-color-purple: #591898;
+
+  /* Text */        
+  --font-family: "Open Sans", sans-serif;
+
+  --text-xl: bold 36px var(--font-family); /* h1 */
+  --text-lg: bold 32px var(--font-family); /* h2 */
+  --text-md: bold 28px var(--font-family); /* h3 */
+  --text-hl: bold 16px var(--font-family); /* head line */
+  --text: 16px var(--font-family); /* p */
+  --text-sub: italic 16px var(--font-family); /* sub */
 }
