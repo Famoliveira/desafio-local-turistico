@@ -12,6 +12,18 @@ h1 {
   font: var(--text-xl);
 }
 
+h2 {
+  margin-top: 2px;
+  font: var(--text-lg);
+}
+
+p {
+  font: var(--text);
+  color: var(--text-color-secondary);
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
 span {
   font: var(--text-hl);
   color: var(--text-color-headline);
@@ -25,6 +37,14 @@ span {
   object-fit: cover;
   margin-top: 44px;
   margin-bottom: 24px;
+}
+
+img {
+  width: 100%;
+  height: 350px;
+  border-radius: 28px;
+  object-fit: cover;
+  margin-top: 48px;
 }
 
 .subtitle {
