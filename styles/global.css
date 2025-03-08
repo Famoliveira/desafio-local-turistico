@@ -34,3 +34,9 @@
   --text: 16px var(--font-family); /* p */
   --text-sub: italic 16px var(--font-family); /* sub */
 }
+
+body {
+  background-color: var(--background-color-default);
+  color: var(--text-color-primary);
+}
+

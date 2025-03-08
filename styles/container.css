@@ -1,0 +1,44 @@
+.container {
+  padding-top: 88px;
+  padding-inline: 80px;
+  padding-bottom: 65px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin-top: 8px;
+  font: var(--text-xl);
+}
+
+span {
+  font: var(--text-hl);
+  color: var(--text-color-headline);
+  text-transform: uppercase;
+}
+
+#img {
+  width: 100%;
+  height: 660px;
+  border-radius: 28px;
+  object-fit: cover;
+  margin-top: 44px;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font: var(--text-sub);
+  color: var(--text-color-secondary);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.divisor {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-color-primary);
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
