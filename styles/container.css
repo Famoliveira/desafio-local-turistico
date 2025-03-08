@@ -3,6 +3,7 @@
   padding-inline: 80px;
   padding-bottom: 65px;
   margin: 0 auto;
+  max-width: 1280px;  
   display: flex;
   flex-wrap: wrap;
 }
@@ -22,6 +23,7 @@ p {
   color: var(--text-color-secondary);
   margin-top: 8px;
   margin-bottom: 16px;
+  text-align: justify;
 }
 
 span {
@@ -45,6 +47,7 @@ img {
   border-radius: 28px;
   object-fit: cover;
   margin-top: 48px;
+  margin-bottom: 20px;
 }
 
 .subtitle {
@@ -61,4 +64,20 @@ img {
   background-color: var(--border-color-primary);
   margin-top: 40px;
   margin-bottom: 64px;
+}
+
+li {
+  font: var(--text-md);
+  color: var(--text-color-primary);
+}
+
+.good-for {
+  font: bold var(--text);
+  color: var(--text-color-primary);
+  margin-top: 16px;
+  text-transform: none; 
+}
+
+.accent {
+  padding-left: 15px;
 }
