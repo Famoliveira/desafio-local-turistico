@@ -61,8 +61,7 @@ img {
   width: 100%;
   height: 1px;
   background-color: var(--border-color-primary);
-  margin-top: 40px;
-  margin-bottom: 64px;
+  margin: 65px 0;
 }
 
 li {
@@ -75,6 +74,7 @@ li {
   color: var(--text-color-primary);
   margin-top: 16px;
   text-transform: none; 
+  margin-bottom: 40px !important;
 }
 
 .accent {
@@ -95,19 +95,14 @@ li {
 }
 
 .attraction-list li::before {
-  content: counter(item) ". ";
-  counter-increment: item;
-  color: var(--accent-color-orange);
-  font-weight: bold;
-  display: inline-block; /* Adicione esta linha */
-  margin-right: 8px; /* Espaço entre número e título */
+  content: none;
 }
 
 .attraction-list img {
-  margin: 48px 0 24px 0; /* 48px top | 24px bottom */
+  margin: 48px 0 24px 0;
 }
 
-.attraction-list > li { /* > significa "filho direto" */
+.attraction-list > li {
   list-style: none;
   margin-bottom: 40px;
   counter-increment: item;
@@ -118,29 +113,25 @@ li {
   color: var(--accent-color-orange);
   font-weight: bold;
   display: inline-block;
-  margin-right: 4px; /* Reduzindo de 8px para 4px */
+  margin-right: 4px;
 }
 
-/* Estilos da lista */
 .attraction-list h3 {
   font: var(--text-md);
-  margin: 0 0 8px 0; /* Reduzindo a margem inferior de 12px para 8px */
-  display: inline-block; /* Adicione esta linha */
+  margin: 0 0 8px 0;
+  display: inline-block;
 }
 
 .attraction-list p {
   margin: 12px 0;
 }
 
-/* Ajusta o gap entre o final da img e o h3 da próxima li para total de 20px */
-/* Utilizando o pseudo-seletor :has para aplicar apenas em li que contenham imagem */
 .attraction-list li:has(img) {
   margin-bottom: 20px;
 }
 
-/* Lista de "Bom para" */
 .good-for {
-  margin: 48px 0 16px; /* Reduzindo margem superior (12px) e inferior (16px) */
+  margin: 48px 0 16px;
 }
 
 .good-for span {
@@ -150,31 +141,97 @@ li {
 
 .good-for ul {
   list-style: disc;
-  padding-left: 16px; /* Reduzindo o espaço da bolinha */
-  margin-top: 4px; /* Reduzindo de 8px para 4px */
-  counter-reset: none !important; /* Remove qualquer contador herdado */
+  padding-left: 16px;
+  margin-top: 4px;
+  counter-reset: none !important;
 }
 
 .good-for li {
   color: var(--text-color-primary);
   font: var(--text);
   list-style: inherit !important;
-  margin-bottom: 4px; /* Adicione esta linha se quiser reduzir entre itens */
+  margin-bottom: 4px;
 }
 
 .good-for li::before {
-  content: none !important; /* Remove números fantasmas */
+  content: none !important;
 }
 
 .good-for li span {
-  text-transform: none; /* Remove o uppercase do texto História */
+  text-transform: none;
 }
 
 .blue {
   color: var(--accent-color-blue) !important;
 }
 
-/* Ajuste das imagens entre os itens */
 .attraction-list img {
-  margin: 48px 0 24px 0; /* 48px top | 24px bottom */
+  margin: 48px 0 24px 0;
+}
+
+.purple {
+  color: var(--accent-color-purple) !important;
+}
+
+.pink {
+  color: var(--accent-color-pink) !important;
+}
+
+.orange {
+  color: var(--accent-color-orange) !important;
+}
+
+.centered-text {
+  text-align: center;
+  font: var(--text);
+  color: var(--text-color-secondary);
+  margin: 40px 0 65px;
+}
+
+.footer {
+  text-align: center;
+  font: var(--text);
+  color: var(--text-color-tertiary);
+  padding: 20px 0;
+}
+
+.heart-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.footer img {
+  width: 24px;
+  height: 24px;
+}
+
+#footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+#footer-text {
+  font: var(--text);
+  color: var(--text-color-secondary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer-text:hover {
+  color: var(--accent-color-purple);
+  text-decoration: underline;
+}
+
+#heart {
+  width: 18px;
+  height: 18px;
+  margin: 0 8px;
+  border-radius: 0;
+  object-fit: contain;
 }
