@@ -47,7 +47,6 @@ img {
   border-radius: 28px;
   object-fit: cover;
   margin-top: 48px;
-  margin-bottom: 20px;
 }
 
 .subtitle {
@@ -80,4 +79,102 @@ li {
 
 .accent {
   padding-left: 15px;
+}
+
+.attraction-list {
+  width: 100%;
+  margin-top: 24px;
+  counter-reset: item;
+}
+
+.attraction-list li {
+  font: var(--text-md);
+  color: var(--text-color-primary);
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.attraction-list li::before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  color: var(--accent-color-orange);
+  font-weight: bold;
+  display: inline-block; /* Adicione esta linha */
+  margin-right: 8px; /* Espaço entre número e título */
+}
+
+.attraction-list img {
+  margin: 48px 0 24px 0; /* 48px top | 24px bottom */
+}
+
+.attraction-list > li { /* > significa "filho direto" */
+  list-style: none;
+  margin-bottom: 40px;
+  counter-increment: item;
+}
+
+.attraction-list > li::before {
+  content: counter(item) ". ";
+  color: var(--accent-color-orange);
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 4px; /* Reduzindo de 8px para 4px */
+}
+
+/* Estilos da lista */
+.attraction-list h3 {
+  font: var(--text-md);
+  margin: 0 0 8px 0; /* Reduzindo a margem inferior de 12px para 8px */
+  display: inline-block; /* Adicione esta linha */
+}
+
+.attraction-list p {
+  margin: 12px 0;
+}
+
+/* Ajusta o gap entre o final da img e o h3 da próxima li para total de 20px */
+/* Utilizando o pseudo-seletor :has para aplicar apenas em li que contenham imagem */
+.attraction-list li:has(img) {
+  margin-bottom: 20px;
+}
+
+/* Lista de "Bom para" */
+.good-for {
+  margin: 48px 0 16px; /* Reduzindo margem superior (12px) e inferior (16px) */
+}
+
+.good-for span {
+  font: var(--text-hl);
+  color: var(--text-color-primary);
+}
+
+.good-for ul {
+  list-style: disc;
+  padding-left: 16px; /* Reduzindo o espaço da bolinha */
+  margin-top: 4px; /* Reduzindo de 8px para 4px */
+  counter-reset: none !important; /* Remove qualquer contador herdado */
+}
+
+.good-for li {
+  color: var(--text-color-primary);
+  font: var(--text);
+  list-style: inherit !important;
+  margin-bottom: 4px; /* Adicione esta linha se quiser reduzir entre itens */
+}
+
+.good-for li::before {
+  content: none !important; /* Remove números fantasmas */
+}
+
+.good-for li span {
+  text-transform: none; /* Remove o uppercase do texto História */
+}
+
+.blue {
+  color: var(--accent-color-blue) !important;
+}
+
+/* Ajuste das imagens entre os itens */
+.attraction-list img {
+  margin: 48px 0 24px 0; /* 48px top | 24px bottom */
 }
